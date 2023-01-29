@@ -14,7 +14,7 @@ Download the example config to the MPD directory
 Modify the configuration as needed following [MPD Documentation](https://mpd.readthedocs.io/en/latest/index.html)
 
 ## Docker
-    docker run -d --name mpd -v /etc/mpd/mpd.conf:/etc/mpd.conf -v /etc/mpd:/etc/mpd -v /Path/To/Your/Music:/var/lib/mpd/music -p 6600:6600 --device /dev/snd --cap-add=sys_nice scoot-software/mpd
+    docker run -d --name mpd -v /etc/mpd/mpd.conf:/etc/mpd.conf -v /etc/mpd:/etc/mpd -v /Path/To/Your/Music:/var/lib/mpd/music -p 6600:6600 --device /dev/snd --cap-add=sys_nice scootsoftware/mpd
 
 ## Docker Compose
 
@@ -22,7 +22,7 @@ Modify the configuration as needed following [MPD Documentation](https://mpd.rea
     services:
     mpd:
         container_name: mpd
-        image: scoot-software/mpd
+        image: scootsoftware/mpd
         volumes:
           - /etc/mpd/mpd.conf:/etc/mpd.conf
           - /etc/mpd:/etc/mpd
