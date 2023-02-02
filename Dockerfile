@@ -1,4 +1,5 @@
-FROM ubuntu:rolling
+ARG ARCH= 
+FROM ${ARCH}ubuntu:rolling
 
 ENV DEBIAN_FRONTEND=noninteractive
 
